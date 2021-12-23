@@ -31,9 +31,7 @@
       <pubDate>Thu, 23 Dec 2021 10:28:07 +0800</pubDate>
       
       <guid>/math/math1/</guid>
-      <description>$$ AveP = \int_0^1 p(r) dr $$
-   1 2     x x    $$ \begin{bmatrix} 1 &amp;amp; 2 &amp;amp; 3 \\ 0 &amp;amp; 0 &amp;amp; 0 \\ 0 &amp;amp; 0 &amp;amp; 0
-\end{bmatrix} $$</description>
+      <description>&lt;p&gt;math1&lt;/p&gt;</description>
     </item>
     
   </channel>
