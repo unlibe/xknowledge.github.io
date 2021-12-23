@@ -9,3 +9,16 @@ math: true
 $$
 AveP = \int_0^1 p(r) dr
 $$
+
+| 1   | 2   |
+| --- | --- |
+| x   | x   |
+
+$$
+\begin{bmatrix} 
+1 & 2 & 3  \\\\
+ 0 & 0 & 0 \\\\
+ 0 & 0 & 0  
+\end{bmatrix}
+$$
+
