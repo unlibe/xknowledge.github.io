@@ -1,8 +1,8 @@
-baseURL = 'http://example.org/'
+baseURL = ''
 languageCode = 'en-us'
 title = 'MathBlog'
 theme = "hyde"
-
+publishdir = "docs"
 [Menus]
   main = [
     #   {Name = "Github", URL = "https://github.com/username/"},
@@ -11,5 +11,12 @@ theme = "hyde"
     {Name="math",URL="/math"},
   ]
 [params]
-  themeColor = "theme-base-08"
+#   themeColor = "theme-base-08"
+#   themeColor = "theme-base-09"
+#   themeColor = "theme-base-0a"
+#   themeColor = "theme-base-0b"
+#   themeColor = "theme-base-0c"
+  themeColor = "theme-base-0d"
+#   themeColor = "theme-base-0e"
+#   themeColor = "theme-base-0f"
   layoutReverse = true
