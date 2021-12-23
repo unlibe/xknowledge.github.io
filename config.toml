@@ -1,0 +1,15 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'MathBlog'
+theme = "hyde"
+
+[Menus]
+  main = [
+    #   {Name = "Github", URL = "https://github.com/username/"},
+    #   {Name = "LinkedIn", URL = "https://www.linkedin.com/in/username/"}
+    {Name="post",URL="/post"},
+    {Name="math",URL="/math"},
+  ]
+[params]
+  themeColor = "theme-base-08"
+  layoutReverse = true
