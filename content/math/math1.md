@@ -10,9 +10,7 @@ $$
 AveP = \int_0^1 p(r) dr
 $$
 
-| 1   | 2   |
-| --- | --- |
-| x   | x   |
+$$\lim\limits_{x\to\infty}x^2$$
 
 $$
 \begin{bmatrix} 
