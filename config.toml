@@ -2,6 +2,7 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'MathBlog'
 theme = "hyde"
+# theme = "hugo-theme-pure"
 publishdir = "docs"
 [Menus]
   main = [
@@ -20,3 +21,4 @@ publishdir = "docs"
 #   themeColor = "theme-base-0e"
 #   themeColor = "theme-base-0f"
   layoutReverse = true
+  enableMathJax = true #Enable mathjax support, to use mathematical notations

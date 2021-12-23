@@ -12,11 +12,4 @@ $$
 
 $$\lim\limits_{x\to\infty}x^2$$
 
-$$
-\begin{bmatrix} 
-1 & 2 & 3  \\\\
- 0 & 0 & 0 \\\\
- 0 & 0 & 0  
-\end{bmatrix}
-$$
 
