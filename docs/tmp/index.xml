@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tmps on MathBlog</title>
+    <link>/tmp/</link>
+    <description>Recent content in Tmps on MathBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Dec 2021 16:27:37 +0800</lastBuildDate><atom:link href="/tmp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Math</title>
+      <link>/tmp/math/</link>
+      <pubDate>Tue, 28 Dec 2021 16:27:37 +0800</pubDate>
+      
+      <guid>/tmp/math/</guid>
+      <description>&lt;p&gt;公式模板&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
