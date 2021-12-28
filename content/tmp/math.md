@@ -31,10 +31,9 @@ math: true
 
 $$
 \begin{aligned}
-f(x) & = (m+n)^2 \\
+f(x) & = (m+n)^2 \\\\
 & =     m^2 + 2mn + n^2
 \end{aligned}
- 
 $$
 
 $$
