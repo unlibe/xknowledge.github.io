@@ -9,6 +9,34 @@ math: true
 
 <!--more-->
 
+
+| function   | show       |
+| ---------- | ---------- |
+| `\alpha`   | $\alpha$   |
+| `\beta`    | $\beta$    |
+| `\gamma`   | $\gamma$   |
+| `\delta`   | $\delta$   |
+| `\epsilon` | $\epsilon$ |
+| `\zeta`    | $\zeta$    |
+| `\eta`     | $\eta$     |
+| `\theta`   | $\theta$   |
+| `\lambda`  | $\lambda$  |
+| `\mu`      | $\mu$      |
+| `\xi`      | $\xi$      |
+| `\pi`      | $\pi$      |
+| `\rho`     | $\rho$     |
+| `\sigma`   | $\sigma$   |
+| `\tau`     | $\tau$     |
+| `\upsilon` | $\upsilon$ |
+
+$$
+\begin{aligned}
+f(x) & = (m+n)^2 \\
+& =     m^2 + 2mn + n^2
+\end{aligned}
+ 
+$$
+
 $$
 \forall \exists
  \nexists
