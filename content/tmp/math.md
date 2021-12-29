@@ -29,12 +29,23 @@ math: true
 | `\tau`     | $\tau$     |
 | `\upsilon` | $\upsilon$ |
 
+_a_
+
+$x_{ab}^c$
 $$
 \begin{aligned}
 f(x) & = (m+n)^2 \\\\
 & =     m^2 + 2mn + n^2
 \end{aligned}
 $$
+
+$$
+\begin{aligned}
+f(x) & = (m+n)^2 \\
+& =     m^2 + 2mn + n^2
+\end{aligned}
+$$
+
 
 $$
 \forall \exists

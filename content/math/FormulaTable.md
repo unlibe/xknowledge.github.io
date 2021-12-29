@@ -5,7 +5,12 @@ draft: false
 math: true
 ---
 
-
+| 原表示 | 本文章表示 |
+| ------ | ---------- |
+| `\\`   | `\\\\`     |
+| `\|`   | `\\|`      |
+| `\{`   | `\\{`      |
+| `\%`   | `\\%`      |
 
 <!--more-->
 
@@ -461,7 +466,7 @@ ${\displaystyle \hookrightarrow ,\hookleftarrow ,\multimap ,\leftrightsquigarrow
 
 `\amalg \% \dagger \ddagger \ldots \cdots`
 
-${\displaystyle \amalg \%\dagger \ddagger \ldots \cdots}$
+${\displaystyle \amalg \\\%\dagger \ddagger \ldots \cdots}$
 
 `\smile \frown \wr \triangleleft \triangleright`
 
@@ -611,9 +616,9 @@ ${\displaystyle {\underline {klm}}}$
 
 ${\displaystyle \overbrace {1+2+\cdots +100} }$
 
-`\begin{matrix} 5050 \\ \overbrace{ 1+2+\cdots+100 } \end{matrix}`
+`\begin{matrix} 5050 \\\\ \overbrace{ 1+2+\cdots+100 } \end{matrix}`
 
-${\displaystyle {\begin{matrix}5050\\\overbrace {1+2+\cdots +100} \end{matrix}}}$
+${\displaystyle {\begin{matrix}5050\\\\\overbrace {1+2+\cdots +100} \end{matrix}}}$
 
 下括号
 
@@ -621,9 +626,9 @@ ${\displaystyle {\begin{matrix}5050\\\overbrace {1+2+\cdots +100} \end{matrix}}}
 
 ${\displaystyle \underbrace {a+b+\cdots +z} }$
 
-`\begin{matrix} \underbrace{ a+b+\cdots+z } \\ 26 \end{matrix}`
+`\begin{matrix} \underbrace{ a+b+\cdots+z } \\\\ 26 \end{matrix}`
 
-${\displaystyle {\begin{matrix}\underbrace {a+b+\cdots +z} \\26\end{matrix}}}$
+${\displaystyle {\begin{matrix}\underbrace {a+b+\cdots +z} \\\\26\end{matrix}}}$
 
 求和（累加）
 
@@ -764,20 +769,20 @@ ${\displaystyle {\binom {n}{r}}={\dbinom {n}{n-r}}=\mathrm {C} _{n}^{r}=\mathrm 
 
 ```tex
 \begin{array}{cc}
-\mathrm{Bad} & \mathrm{Better} \\
-\hline \\
-e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}& e^{i\pi/2} \\
-\int_{-\frac\pi2}^\frac\pi2 \sin x\,dx & \int_{-\pi/2}^{\pi/2}\sin x\,dx \\
+\mathrm{Bad} & \mathrm{Better} \\\\
+\hline \\\\
+e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}& e^{i\pi/2} \\\\
+\int_{-\frac\pi2}^\frac\pi2 \sin x\,dx & \int_{-\pi/2}^{\pi/2}\sin x\,dx \\\\
 \end{array}
 ```
 
 - 显示：
 $$
 \begin{array}{cc}
-\mathrm{Bad} & \mathrm{Better} \\
-\hline \\
-e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}& e^{i\pi/2} \\
-\int_{-\frac\pi2}^\frac\pi2 \sin x\,dx & \int_{-\pi/2}^{\pi/2}\sin x\,dx \\
+\mathrm{Bad} & \mathrm{Better} \\\\
+\hline \\\\
+e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}& e^{i\pi/2} \\\\
+\int_{-\frac\pi2}^\frac\pi2 \sin x\,dx & \int_{-\pi/2}^{\pi/2}\sin x\,dx \\\\
 \end{array}
 $$
 
@@ -793,20 +798,20 @@ $$
 
 类型可以是：矩阵 `matrix` `pmatrix` `bmatrix` `Bmatrix` `vmatrix` `Vmatrix`、条件表达式 `cases`、多行对齐方程式 `aligned`、数组 `array`。
 
-在公式内容中：在每一行中插入 `&` 来指定需要**对齐**的内容，在每行结尾处使用 `\\` **换行**。
+在公式内容中：在每一行中插入 `&` 来指定需要**对齐**的内容，在每行结尾处使用 `\\\\` **换行**。
 
 ### 无框矩阵
 
-在开头使用 `begin{matrix}`，在结尾使用 `end{matrix}`，在中间插入矩阵元素，每个元素之间插入 `&` ，并在每行结尾处使用 `\\` 。
+在开头使用 `begin{matrix}`，在结尾使用 `end{matrix}`，在中间插入矩阵元素，每个元素之间插入 `&` ，并在每行结尾处使用 `\\\\` 。
 
 ```tex
 \begin{matrix}
-x & y \\
+x & y \\\\
 z & v
 \end{matrix}
 ```
 
-${\displaystyle {\begin{matrix}x&y\\z&v\end{matrix}}}$
+${\displaystyle {\begin{matrix}x&y\\\\z&v\end{matrix}}}$
 
 ### 有框矩阵
 
@@ -814,63 +819,63 @@ ${\displaystyle {\begin{matrix}x&y\\z&v\end{matrix}}}$
 
 ```tex
 \begin{vmatrix}
-x & y \\
+x & y \\\\
 z & v
 \end{vmatrix}
 ```
 
-${\displaystyle {\begin{vmatrix}x&y\\z&v\end{vmatrix}}}$
+${\displaystyle {\begin{vmatrix}x&y\\\\z&v\end{vmatrix}}}$
 
 ```tex
 \begin{Vmatrix}
-x & y \\
+x & y \\\\
 z & v
 \end{Vmatrix}
 ```
 
-${\displaystyle {\begin{Vmatrix}x&y\\z&v\end{Vmatrix}}}$
+${\displaystyle {\begin{Vmatrix}x&y\\\\z&v\end{Vmatrix}}}$
 
 使用 `\cdots` $\cdots$ , `\ddots` $\ddots$ , `\vdots` $\vdots$ 来输入**省略符号**。
 
 ```tex
 \begin{bmatrix}
-0      & \cdots & 0      \\
-\vdots & \ddots & \vdots \\
+0      & \cdots & 0      \\\\
+\vdots & \ddots & \vdots \\\\
 0      & \cdots & 0
 \end{bmatrix}
 ```
 
-${\displaystyle {\begin{bmatrix}0&\cdots &0\\\vdots &\ddots &\vdots \\0&\cdots &0\end{bmatrix}}}$
+${\displaystyle {\begin{bmatrix}0&\cdots &0\\\\\vdots &\ddots &\vdots \\\\0&\cdots &0\end{bmatrix}}}$
 
 ```tex
 \begin{Bmatrix}
-x & y \\
+x & y \\\\
 z & v
 \end{Bmatrix}
 ```
 
-${\displaystyle {\begin{Bmatrix}x&y\\z&v\end{Bmatrix}}}$
+${\displaystyle {\begin{Bmatrix}x&y\\\\z&v\end{Bmatrix}}}$
 
 ```tex
 \begin{pmatrix}
-x & y \\
+x & y \\\\
 z & v
 \end{pmatrix}
 ```
 
-${\displaystyle {\begin{pmatrix}x&y\\z&v\end{pmatrix}}}$
+${\displaystyle {\begin{pmatrix}x&y\\\\z&v\end{pmatrix}}}$
 
 ### 条件表达式
 
 ```tex
 f(n) =
 \begin{cases} 
-n/2,  & \text{if }n\text{ is even} \\
+n/2,  & \text{if }n\text{ is even} \\\\
 3n+1, & \text{if }n\text{ is odd}
 \end{cases}
 ```
 
-${\displaystyle f(n)={\begin{cases}n/2,&{\text{if }}n{\text{ is even}}\\3n+1,&{\text{if }}n{\text{ is odd}}\end{cases}}}$
+${\displaystyle f(n)={\begin{cases}n/2,&{\text{if }}n{\text{ is even}}\\\\3n+1,&{\text{if }}n{\text{ is odd}}\end{cases}}}$
 
 ### 多行等式、同余式
 
@@ -878,80 +883,80 @@ ${\displaystyle f(n)={\begin{cases}n/2,&{\text{if }}n{\text{ is even}}\\3n+1,&{\
 
 ```tex
 \begin{aligned}
-f(x) & = (m+n)^2 \\
-     & = m^2+2mn+n^2 \\
+f(x) & = (m+n)^2 \\\\
+     & = m^2+2mn+n^2 \\\\
 \end{aligned}
 ```
 
-${\displaystyle {\begin{aligned}f(x)&=(m+n)^{2}\\&=m^{2}+2mn+n^{2}\\\end{aligned}}}$
+${\displaystyle {\begin{aligned}f(x)&=(m+n)^{2}\\\\&=m^{2}+2mn+n^{2}\\\\\end{aligned}}}$
 
 ```tex
 begin{aligned}
 3^{6n+3}+4^{6n+3} 
-& \equiv (3^3)^{2n+1}+(4^3)^{2n+1}\\  
-& \equiv 27^{2n+1}+64^{2n+1}\\  
-& \equiv 27^{2n+1}+(-27)^{2n+1}\\ 
-& \equiv 27^{2n+1}-27^{2n+1}\\
-& \equiv 0 \pmod{91}\\
+& \equiv (3^3)^{2n+1}+(4^3)^{2n+1}\\\\  
+& \equiv 27^{2n+1}+64^{2n+1}\\\\  
+& \equiv 27^{2n+1}+(-27)^{2n+1}\\\\ 
+& \equiv 27^{2n+1}-27^{2n+1}\\\\
+& \equiv 0 \pmod{91}\\\\
 \end{aligned}
 ```
 
-${\displaystyle {\begin{aligned}3^{6n+3}+4^{6n+3}&\equiv (3^{3})^{2n+1}+(4^{3})^{2n+1}\\&\equiv 27^{2n+1}+64^{2n+1}\\&\equiv 27^{2n+1}+(-27)^{2n+1}\\&\equiv 27^{2n+1}-27^{2n+1}\\&\equiv 0{\pmod {91}}\\\end{aligned}}}$
+${\displaystyle {\begin{aligned}3^{6n+3}+4^{6n+3}&\equiv (3^{3})^{2n+1}+(4^{3})^{2n+1}\\\\&\equiv 27^{2n+1}+64^{2n+1}\\\\&\equiv 27^{2n+1}+(-27)^{2n+1}\\\\&\equiv 27^{2n+1}-27^{2n+1}\\\\&\equiv 0{\pmod {91}}\\\\\end{aligned}}}$
 
 ```tex
 \begin{alignedat}{3}
-f(x) & = (m-n)^2 \\
-f(x) & = (-m+n)^2 \\
-     & = m^2-2mn+n^2 \\
+f(x) & = (m-n)^2 \\\\
+f(x) & = (-m+n)^2 \\\\
+     & = m^2-2mn+n^2 \\\\
 \end{alignedat}
 ```
 
-${\displaystyle {\begin{alignedat}{3}f(x)&=(m-n)^{2}\\f(x)&=(-m+n)^{2}\\&=m^{2}-2mn+n^{2}\\\end{alignedat}}}$
+${\displaystyle {\begin{alignedat}{3}f(x)&=(m-n)^{2}\\\\f(x)&=(-m+n)^{2}\\\\&=m^{2}-2mn+n^{2}\\\\\end{alignedat}}}$
 
 ### 方程组
 
 ```tex
 \begin{cases}
-3x + 5y +  z \\
-7x - 2y + 4z \\
+3x + 5y +  z \\\\
+7x - 2y + 4z \\\\
 -6x + 3y + 2z
 \end{cases}
 ```
 
 $$
-{\displaystyle {\begin{cases}3x+5y+z\\7x-2y+4z\\-6x+3y+2z\end{cases}}}
+{\displaystyle {\begin{cases}3x+5y+z\\\\7x-2y+4z\\\\-6x+3y+2z\end{cases}}}
 $$
 
 或
 
 ```tex
 \left\{\begin{aligned}
-3x + 5y +  z \\
-7x - 2y + 4z \\
+3x + 5y +  z \\\\
+7x - 2y + 4z \\\\
 -6x + 3y + 2z
 \end{aligned}\right.
 ```
 
 $$
 \left\{\begin{aligned}
-3x + 5y +  z \\
-7x - 2y + 4z \\
+3x + 5y +  z \\\\
+7x - 2y + 4z \\\\
 -6x + 3y + 2z
 \end{aligned}\right.
 $$
 
 ## 数组与表格
 
-通常，一个格式化后的表格比单纯的文字或排版后的文字更具有可读性。数组和表格均以 `\begin{array}` 开头，并在其后定义列数及每一列的文本对齐属性，`c` `l` `r` 分别代表居中、左对齐及右对齐。若需要插入垂直分割线，在定义式中插入 `|` ，若要插入水平分割线，在下一行输入前插入 `\hline` 。与矩阵相似，每行元素间均须要插入 `&` ，每行元素以 `\\` 结尾，最后以 `\end{array}` 结束数组。
+通常，一个格式化后的表格比单纯的文字或排版后的文字更具有可读性。数组和表格均以 `\begin{array}` 开头，并在其后定义列数及每一列的文本对齐属性，`c` `l` `r` 分别代表居中、左对齐及右对齐。若需要插入垂直分割线，在定义式中插入 `|` ，若要插入水平分割线，在下一行输入前插入 `\hline` 。与矩阵相似，每行元素间均须要插入 `&` ，每行元素以 `\\\\` 结尾，最后以 `\end{array}` 结束数组。
 
 - 例子：
 
 ```tex
 \begin{array}{c|lcr}
-n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
+n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\\\
 \hline
-1 & 0.24 & 1 & 125 \\
-2 & -1 & 189 & -8 \\
+1 & 0.24 & 1 & 125 \\\\
+2 & -1 & 189 & -8 \\\\
 3 & -20 & 2000 & 1+10i
 \end{array}
 ```
@@ -959,10 +964,10 @@ n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
 - 显示：
 $$
 \begin{array}{c|lcr}
-n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\
+n & \text{左对齐} & \text{居中对齐} & \text{右对齐} \\\\
 \hline
-1 & 0.24 & 1 & 125 \\
-2 & -1 & 189 & -8 \\
+1 & 0.24 & 1 & 125 \\\\
+2 & -1 & 189 & -8 \\\\
 3 & -20 & 2000 & 1+10i
 \end{array}
 $$
@@ -971,45 +976,45 @@ $$
 
 ```tex
 \begin{array}{lcl}
-z        & = & a \\
+z        & = & a \\\\
 f(x,y,z) & = & x + y + z 
 \end{array}
 ```
 
 - 显示：
 
-${\displaystyle {\begin{array}{lcl}z&=&a\\f(x,y,z)&=&x+y+z\end{array}}}$
+${\displaystyle {\begin{array}{lcl}z&=&a\\\\f(x,y,z)&=&x+y+z\end{array}}}$
 
 - 例子:
 
 ```tex
 \begin{array}{lcr}
-z        & = & a \\
+z        & = & a \\\\
 f(x,y,z) & = & x + y + z    
 \end{array}
 ```
 
 - 显示:
 
-${\displaystyle {\begin{array}{lcr}z&=&a\\f(x,y,z)&=&x+y+z\end{array}}}$
+${\displaystyle {\begin{array}{lcr}z&=&a\\\\f(x,y,z)&=&x+y+z\end{array}}}$
 
 - 例子:
 
 ```tex
 \begin{array}{ccc}
-a & b & S \\
+a & b & S \\\\
 \hline
-0&0&1\\
-0&1&1\\
-1&0&1\\
-1&1&0\\
+0&0&1\\\\
+0&1&1\\\\
+1&0&1\\\\
+1&1&0\\\\
 \end{array}
 ```
 
 - 显示:
 
 $$
-{\displaystyle {\begin{array}{ccc}a&b&S\\\hline 0&0&1\\0&1&1\\1&0&1\\1&1&0\\\end{array}}}
+{\displaystyle {\begin{array}{ccc}a&b&S\\\\\hline 0&0&1\\\\0&1&1\\\\1&0&1\\\\1&1&0\\\\\end{array}}}
 $$
 
 ### 嵌套数组或表格
@@ -1026,33 +1031,33 @@ $$
     \begin{array}{cc}
         % inner array of minimum values 内层"最小值"数组
         \begin{array}{c|cccc}
-        \text{min} & 0 & 1 & 2 & 3\\
+        \text{min} & 0 & 1 & 2 & 3\\\\
         \hline
-        0 & 0 & 0 & 0 & 0\\
-        1 & 0 & 1 & 1 & 1\\
-        2 & 0 & 1 & 2 & 2\\
+        0 & 0 & 0 & 0 & 0\\\\
+        1 & 0 & 1 & 1 & 1\\\\
+        2 & 0 & 1 & 2 & 2\\\\
         3 & 0 & 1 & 2 & 3
         \end{array}
     &
         % inner array of maximum values 内层"最大值"数组
         \begin{array}{c|cccc}
-        \text{max}&0&1&2&3\\
+        \text{max}&0&1&2&3\\\\
         \hline
-        0 & 0 & 1 & 2 & 3\\
-        1 & 1 & 1 & 2 & 3\\
-        2 & 2 & 2 & 2 & 3\\
+        0 & 0 & 1 & 2 & 3\\\\
+        1 & 1 & 1 & 2 & 3\\\\
+        2 & 2 & 2 & 2 & 3\\\\
         3 & 3 & 3 & 3 & 3
         \end{array}
     \end{array}
     % 内层第一行表格组结束
-    \\
+    \\\\
     % inner array of delta values 内层第二行Delta值数组
         \begin{array}{c|cccc}
-        \Delta&0&1&2&3\\
+        \Delta&0&1&2&3\\\\
         \hline
-        0 & 0 & 1 & 2 & 3\\
-        1 & 1 & 0 & 1 & 2\\
-        2 & 2 & 1 & 0 & 1\\
+        0 & 0 & 1 & 2 & 3\\\\
+        1 & 1 & 0 & 1 & 2\\\\
+        2 & 2 & 1 & 0 & 1\\\\
         3 & 3 & 2 & 1 & 0
         \end{array}
         % 内层第二行表格组结束
@@ -1067,33 +1072,33 @@ $$
     \begin{array}{cc}
         % inner array of minimum values 内层"最小值"数组
         \begin{array}{c|cccc}
-        \text{min} & 0 & 1 & 2 & 3\\
+        \text{min} & 0 & 1 & 2 & 3\\\\
         \hline
-        0 & 0 & 0 & 0 & 0\\
-        1 & 0 & 1 & 1 & 1\\
-        2 & 0 & 1 & 2 & 2\\
+        0 & 0 & 0 & 0 & 0\\\\
+        1 & 0 & 1 & 1 & 1\\\\
+        2 & 0 & 1 & 2 & 2\\\\
         3 & 0 & 1 & 2 & 3
         \end{array}
     &
         % inner array of maximum values 内层"最大值"数组
         \begin{array}{c|cccc}
-        \text{max}&0&1&2&3\\
+        \text{max}&0&1&2&3\\\\
         \hline
-        0 & 0 & 1 & 2 & 3\\
-        1 & 1 & 1 & 2 & 3\\
-        2 & 2 & 2 & 2 & 3\\
+        0 & 0 & 1 & 2 & 3\\\\
+        1 & 1 & 1 & 2 & 3\\\\
+        2 & 2 & 2 & 2 & 3\\\\
         3 & 3 & 3 & 3 & 3
         \end{array}
     \end{array}
     % 内层第一行表格组结束
-    \\
+    \\\\
     % inner array of delta values 内层第二行Delta值数组
         \begin{array}{c|cccc}
-        \Delta&0&1&2&3\\
+        \Delta&0&1&2&3\\\\
         \hline
-        0 & 0 & 1 & 2 & 3\\
-        1 & 1 & 0 & 1 & 2\\
-        2 & 2 & 1 & 0 & 1\\
+        0 & 0 & 1 & 2 & 3\\\\
+        1 & 1 & 0 & 1 & 2\\\\
+        2 & 2 & 1 & 0 & 1\\\\
         3 & 3 & 2 & 1 & 0
         \end{array}
         % 内层第二行表格组结束
@@ -1108,7 +1113,7 @@ $$
 $$
 \left[
     \begin{array}{cc|c}
-      1&2&3\\
+      1&2&3\\\\
       4&5&6
     \end{array}
 \right]
@@ -1119,7 +1124,7 @@ $$
 $$
 \left[
     \begin{array}{cc|c}
-      1&2&3\\
+      1&2&3\\\\
       4&5&6
     \end{array}
 \right]
@@ -1177,13 +1182,13 @@ ${\displaystyle \aleph \beth \gimel \daleth}$
 
 若要对公式的某一部分字符进行字体转换，可以用 `{\字体 {需转换的部分字符}}` 命令，其中 `\字体` 部分可以参照下表选择合适的字体。一般情况下，公式默认为意大利体 $italic$ 。
 
-|输入|说明|显示|输入|说明|显示|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|\rm|罗马体|$\rm{Sample}$|\cal|花体|$\cal{SAMPLE}$|
-|\it|意大利体|$\it{Sample}$|\Bbb|黑板粗体|$\Bbb{SAMPLE}$|
-|\bf|粗体|$\bf{Sample}$|\mit|数学斜体|$\mit{SAMPLE}$|
-|\sf|等线体|$\sf{Sample}$|\scr|手写体|$\scr{SAMPLE}$|
-|\tt|打字机体|$\tt{Sample}$|\frak|旧德式字体|$\frak{Sample}$|
+| 输入  | 说明  | 显示  | 输入  | 说明  | 显示  |
+| :---: | :---: | :---: | :---: | :---: | :---: ||
+|  \rm  |  罗马体  | $\rm{Sample}$ | \cal  |    花体    | $\cal{SAMPLE}$  |
+|  \it  | 意大利体 | $\it{Sample}$ | \Bbb  |  黑板粗体  | $\Bbb{SAMPLE}$  |
+|  \bf  |   粗体   | $\bf{Sample}$ | \mit  |  数学斜体  | $\mit{SAMPLE}$  |
+|  \sf  |  等线体  | $\sf{Sample}$ | \scr  |   手写体   | $\scr{SAMPLE}$  |
+|  \tt  | 打字机体 | $\tt{Sample}$ | \frak | 旧德式字体 | $\frak{Sample}$ |
 
 ### 所有字体
 
@@ -1434,7 +1439,7 @@ ${\displaystyle {\text{if}}~n\ {\text{is even}}}$
 - 例子：
 ```
 f(n)= \begin{cases}
-n/2, & \text {if $n$ is even} \\
+n/2, & \text {if $n$ is even} \\\\
 3n+1, &\text{if $n$ is odd}
 \end{cases} 
 ```
@@ -1442,7 +1447,7 @@ n/2, & \text {if $n$ is even} \\
 - 显示：
 
 $$
-f(n)= \begin{cases} n/2, & \text {if}\ n\ \text{is even} \\ 3n+1, & \text {if}\ n\ \text{is odd} \end{cases}
+f(n)= \begin{cases} n/2, & \text {if}\ n\ \text{is even} \\\\ 3n+1, & \text {if}\ n\ \text{is odd} \end{cases}
 $$
 
 ## 括号
@@ -1483,7 +1488,7 @@ ${\displaystyle \left[{\frac {a}{b}}\right]}$
 
 `\left{ \frac{a}{b} \right}`
 
-${\displaystyle \left\{{\frac {a}{b}}\right\}}$
+${\displaystyle \left\\{\frac {a}{b}\right\\}}$
 
 角括号
 
@@ -1557,7 +1562,7 @@ ${\displaystyle \left\{{\frac {a}{b}}\right.}$
 
 `\left. \frac{a}{b} \right \}`
 
-${\displaystyle \left.{\frac {a}{b}}\right\}}$
+${\displaystyle \left.{\frac {a}{b}}\right\\}}$
 
 备注：
 
@@ -1566,9 +1571,10 @@ ${\displaystyle \left.{\frac {a}{b}}\right\}}$
   `\Bigg ( \bigg [ \Big \{ \big \langle \left | \| \frac{a}{b} \| \right | \big \rangle \Big \} \bigg ] \Bigg )`
 
   显示︰
+  $\Big(\Big)$
 
   $$
-  \Bigg ( \bigg [ \Big \{ \big \langle \left | \| \frac{a}{b} \| \right | \big \rangle \Big \} \bigg ] \Bigg )
+  \Bigg ( \bigg [ \Big \\{ \big \langle \left | \\| \frac{a}{b} \\| \right | \big \rangle \Big \\} \bigg ] \Bigg )
   $$
 
 ## 空格
@@ -1642,16 +1648,16 @@ ${\displaystyle -{\frac {m}{6}}}$
 
 对于较旧的浏览器（HTML4与CSS2），以下颜色是被支持的：
 
-|输入|显示|输入|显示|
-|:--:|:--:|:--:|:--:|
-|black|$\color{black}{text}$|grey|$\color{grey}{text}$|
-|silver|$\color{silver}{text}$|white|$\color{white}{text}$|
-|maroon|$\color{maroon}{text}$|red|$\color{red}{text}$|
-|yellow|$\color{yellow}{text}$|lime|$\color{lime}{text}$|
-|olive|$\color{olive}{text}$|green|$\color{green}{text}$|
-|teal|$\color{teal}{text}$|auqa|$\color{auqa}{text}$|
-|blue|$\color{blue}{text}$|navy|$\color{navy}{text}$|
-|purple|$\color{purple}{text}$|fuchsia|$\color{fuchsia}{text}$|
+|  输入  |          显示          |  输入   |          显示           |
+| :----: | :--------------------: | :-----: | :---------------------: |
+| black  | $\color{black}{text}$  |  grey   |  $\color{grey}{text}$   |
+| silver | $\color{silver}{text}$ |  white  |  $\color{white}{text}$  |
+| maroon | $\color{maroon}{text}$ |   red   |   $\color{red}{text}$   |
+| yellow | $\color{yellow}{text}$ |  lime   |  $\color{lime}{text}$   |
+| olive  | $\color{olive}{text}$  |  green  |  $\color{green}{text}$  |
+|  teal  |  $\color{teal}{text}$  |  auqa   |  $\color{auqa}{text}$   |
+|  blue  |  $\color{blue}{text}$  |  navy   |  $\color{navy}{text}$   |
+| purple | $\color{purple}{text}$ | fuchsia | $\color{fuchsia}{text}$ |
 
 对于较新的浏览器（HTML5与CSS3），额外的124种颜色将被支持：
 
@@ -1662,13 +1668,13 @@ ${\displaystyle -{\frac {m}{6}}}$
 ```
 \begin{array}{|rrrrrrrr|}\hline
 \verb+#000+ & \color{#000}{text} & & &
-\verb+#00F+ & \color{#00F}{text} & & \\
+\verb+#00F+ & \color{#00F}{text} & & \\\\
 & & \verb+#0F0+ & \color{#0F0}{text} &
-& & \verb+#0FF+ & \color{#0FF}{text}\\
+& & \verb+#0FF+ & \color{#0FF}{text}\\\\
 \verb+#F00+ & \color{#F00}{text} & & &
-\verb+#F0F+ & \color{#F0F}{text} & & \\
+\verb+#F0F+ & \color{#F0F}{text} & & \\\\
 & & \verb+#FF0+ & \color{#FF0}{text} &
-& & \verb+#FFF+ & \color{#FFF}{text}\\
+& & \verb+#FFF+ & \color{#FFF}{text}\\\\
 \hline
 \end{array}
 ```
@@ -1677,13 +1683,13 @@ ${\displaystyle -{\frac {m}{6}}}$
 $$
 \begin{array}{|rrrrrrrr|}\hline
 \verb+#000+ & \color{#000}{text} & & &
-\verb+#00F+ & \color{#00F}{text} & & \\
+\verb+#00F+ & \color{#00F}{text} & & \\\\
 & & \verb+#0F0+ & \color{#0F0}{text} &
-& & \verb+#0FF+ & \color{#0FF}{text}\\
+& & \verb+#0FF+ & \color{#0FF}{text}\\\\
 \verb+#F00+ & \color{#F00}{text} & & &
-\verb+#F0F+ & \color{#F0F}{text} & & \\
+\verb+#F0F+ & \color{#F0F}{text} & & \\\\
 & & \verb+#FF0+ & \color{#FF0}{text} &
-& & \verb+#FFF+ & \color{#FFF}{text}\\
+& & \verb+#FFF+ & \color{#FFF}{text}\\\\
 \hline
 \end{array}
 $$
@@ -1692,20 +1698,20 @@ $$
 ```
 \begin{array}{|rrrrrrrr|}
 \hline
-\verb+#000+ & \color{#000}{text} & \verb+#005+ & \color{#005}{text} & \verb+#00A+ & \color{#00A}{text} & \verb+#00F+ & \color{#00F}{text}  \\
-\verb+#500+ & \color{#500}{text} & \verb+#505+ & \color{#505}{text} & \verb+#50A+ & \color{#50A}{text} & \verb+#50F+ & \color{#50F}{text}  \\
-\verb+#A00+ & \color{#A00}{text} & \verb+#A05+ & \color{#A05}{text} & \verb+#A0A+ & \color{#A0A}{text} & \verb+#A0F+ & \color{#A0F}{text}  \\
-\verb+#F00+ & \color{#F00}{text} & \verb+#F05+ & \color{#F05}{text} & \verb+#F0A+ & \color{#F0A}{text} & \verb+#F0F+ & \color{#F0F}{text}  \\
+\verb+#000+ & \color{#000}{text} & \verb+#005+ & \color{#005}{text} & \verb+#00A+ & \color{#00A}{text} & \verb+#00F+ & \color{#00F}{text}  \\\\
+\verb+#500+ & \color{#500}{text} & \verb+#505+ & \color{#505}{text} & \verb+#50A+ & \color{#50A}{text} & \verb+#50F+ & \color{#50F}{text}  \\\\
+\verb+#A00+ & \color{#A00}{text} & \verb+#A05+ & \color{#A05}{text} & \verb+#A0A+ & \color{#A0A}{text} & \verb+#A0F+ & \color{#A0F}{text}  \\\\
+\verb+#F00+ & \color{#F00}{text} & \verb+#F05+ & \color{#F05}{text} & \verb+#F0A+ & \color{#F0A}{text} & \verb+#F0F+ & \color{#F0F}{text}  \\\\
 \hline
-\verb+#080+ & \color{#080}{text} & \verb+#085+ & \color{#085}{text} & \verb+#08A+ & \color{#08A}{text} & \verb+#08F+ & \color{#08F}{text}  \\
-\verb+#580+ & \color{#580}{text} & \verb+#585+ & \color{#585}{text} & \verb+#58A+ & \color{#58A}{text} & \verb+#58F+ & \color{#58F}{text}  \\
-\verb+#A80+ & \color{#A80}{text} & \verb+#A85+ & \color{#A85}{text} & \verb+#A8A+ & \color{#A8A}{text} & \verb+#A8F+ & \color{#A8F}{text}  \\
-\verb+#F80+ & \color{#F80}{text} & \verb+#F85+ & \color{#F85}{text} & \verb+#F8A+ & \color{#F8A}{text} & \verb+#F8F+ & \color{#F8F}{text}  \\
+\verb+#080+ & \color{#080}{text} & \verb+#085+ & \color{#085}{text} & \verb+#08A+ & \color{#08A}{text} & \verb+#08F+ & \color{#08F}{text}  \\\\
+\verb+#580+ & \color{#580}{text} & \verb+#585+ & \color{#585}{text} & \verb+#58A+ & \color{#58A}{text} & \verb+#58F+ & \color{#58F}{text}  \\\\
+\verb+#A80+ & \color{#A80}{text} & \verb+#A85+ & \color{#A85}{text} & \verb+#A8A+ & \color{#A8A}{text} & \verb+#A8F+ & \color{#A8F}{text}  \\\\
+\verb+#F80+ & \color{#F80}{text} & \verb+#F85+ & \color{#F85}{text} & \verb+#F8A+ & \color{#F8A}{text} & \verb+#F8F+ & \color{#F8F}{text}  \\\\
 \hline
-\verb+#0F0+ & \color{#0F0}{text} & \verb+#0F5+ & \color{#0F5}{text} & \verb+#0FA+ & \color{#0FA}{text} & \verb+#0FF+ & \color{#0FF}{text}  \\
-\verb+#5F0+ & \color{#5F0}{text} & \verb+#5F5+ & \color{#5F5}{text} & \verb+#5FA+ & \color{#5FA}{text} & \verb+#5FF+ & \color{#5FF}{text}  \\
-\verb+#AF0+ & \color{#AF0}{text} & \verb+#AF5+ & \color{#AF5}{text} & \verb+#AFA+ & \color{#AFA}{text} & \verb+#AFF+ & \color{#AFF}{text}  \\
-\verb+#FF0+ & \color{#FF0}{text} & \verb+#FF5+ & \color{#FF5}{text} & \verb+#FFA+ & \color{#FFA}{text} & \verb+#FFF+ & \color{#FFF}{text}  \\
+\verb+#0F0+ & \color{#0F0}{text} & \verb+#0F5+ & \color{#0F5}{text} & \verb+#0FA+ & \color{#0FA}{text} & \verb+#0FF+ & \color{#0FF}{text}  \\\\
+\verb+#5F0+ & \color{#5F0}{text} & \verb+#5F5+ & \color{#5F5}{text} & \verb+#5FA+ & \color{#5FA}{text} & \verb+#5FF+ & \color{#5FF}{text}  \\\\
+\verb+#AF0+ & \color{#AF0}{text} & \verb+#AF5+ & \color{#AF5}{text} & \verb+#AFA+ & \color{#AFA}{text} & \verb+#AFF+ & \color{#AFF}{text}  \\\\
+\verb+#FF0+ & \color{#FF0}{text} & \verb+#FF5+ & \color{#FF5}{text} & \verb+#FFA+ & \color{#FFA}{text} & \verb+#FFF+ & \color{#FFF}{text}  \\\\
 \hline
 \end{array}
 ```
@@ -1714,20 +1720,20 @@ $$
 $$
 \begin{array}{|rrrrrrrr|}
 \hline
-\verb+#000+ & \color{#000}{text} & \verb+#005+ & \color{#005}{text} & \verb+#00A+ & \color{#00A}{text} & \verb+#00F+ & \color{#00F}{text}  \\
-\verb+#500+ & \color{#500}{text} & \verb+#505+ & \color{#505}{text} & \verb+#50A+ & \color{#50A}{text} & \verb+#50F+ & \color{#50F}{text}  \\
-\verb+#A00+ & \color{#A00}{text} & \verb+#A05+ & \color{#A05}{text} & \verb+#A0A+ & \color{#A0A}{text} & \verb+#A0F+ & \color{#A0F}{text}  \\
-\verb+#F00+ & \color{#F00}{text} & \verb+#F05+ & \color{#F05}{text} & \verb+#F0A+ & \color{#F0A}{text} & \verb+#F0F+ & \color{#F0F}{text}  \\
+\verb+#000+ & \color{#000}{text} & \verb+#005+ & \color{#005}{text} & \verb+#00A+ & \color{#00A}{text} & \verb+#00F+ & \color{#00F}{text}  \\\\
+\verb+#500+ & \color{#500}{text} & \verb+#505+ & \color{#505}{text} & \verb+#50A+ & \color{#50A}{text} & \verb+#50F+ & \color{#50F}{text}  \\\\
+\verb+#A00+ & \color{#A00}{text} & \verb+#A05+ & \color{#A05}{text} & \verb+#A0A+ & \color{#A0A}{text} & \verb+#A0F+ & \color{#A0F}{text}  \\\\
+\verb+#F00+ & \color{#F00}{text} & \verb+#F05+ & \color{#F05}{text} & \verb+#F0A+ & \color{#F0A}{text} & \verb+#F0F+ & \color{#F0F}{text}  \\\\
 \hline
-\verb+#080+ & \color{#080}{text} & \verb+#085+ & \color{#085}{text} & \verb+#08A+ & \color{#08A}{text} & \verb+#08F+ & \color{#08F}{text}  \\
-\verb+#580+ & \color{#580}{text} & \verb+#585+ & \color{#585}{text} & \verb+#58A+ & \color{#58A}{text} & \verb+#58F+ & \color{#58F}{text}  \\
-\verb+#A80+ & \color{#A80}{text} & \verb+#A85+ & \color{#A85}{text} & \verb+#A8A+ & \color{#A8A}{text} & \verb+#A8F+ & \color{#A8F}{text}  \\
-\verb+#F80+ & \color{#F80}{text} & \verb+#F85+ & \color{#F85}{text} & \verb+#F8A+ & \color{#F8A}{text} & \verb+#F8F+ & \color{#F8F}{text}  \\
+\verb+#080+ & \color{#080}{text} & \verb+#085+ & \color{#085}{text} & \verb+#08A+ & \color{#08A}{text} & \verb+#08F+ & \color{#08F}{text}  \\\\
+\verb+#580+ & \color{#580}{text} & \verb+#585+ & \color{#585}{text} & \verb+#58A+ & \color{#58A}{text} & \verb+#58F+ & \color{#58F}{text}  \\\\
+\verb+#A80+ & \color{#A80}{text} & \verb+#A85+ & \color{#A85}{text} & \verb+#A8A+ & \color{#A8A}{text} & \verb+#A8F+ & \color{#A8F}{text}  \\\\
+\verb+#F80+ & \color{#F80}{text} & \verb+#F85+ & \color{#F85}{text} & \verb+#F8A+ & \color{#F8A}{text} & \verb+#F8F+ & \color{#F8F}{text}  \\\\
 \hline
-\verb+#0F0+ & \color{#0F0}{text} & \verb+#0F5+ & \color{#0F5}{text} & \verb+#0FA+ & \color{#0FA}{text} & \verb+#0FF+ & \color{#0FF}{text}  \\
-\verb+#5F0+ & \color{#5F0}{text} & \verb+#5F5+ & \color{#5F5}{text} & \verb+#5FA+ & \color{#5FA}{text} & \verb+#5FF+ & \color{#5FF}{text}  \\
-\verb+#AF0+ & \color{#AF0}{text} & \verb+#AF5+ & \color{#AF5}{text} & \verb+#AFA+ & \color{#AFA}{text} & \verb+#AFF+ & \color{#AFF}{text}  \\
-\verb+#FF0+ & \color{#FF0}{text} & \verb+#FF5+ & \color{#FF5}{text} & \verb+#FFA+ & \color{#FFA}{text} & \verb+#FFF+ & \color{#FFF}{text}  \\
+\verb+#0F0+ & \color{#0F0}{text} & \verb+#0F5+ & \color{#0F5}{text} & \verb+#0FA+ & \color{#0FA}{text} & \verb+#0FF+ & \color{#0FF}{text}  \\\\
+\verb+#5F0+ & \color{#5F0}{text} & \verb+#5F5+ & \color{#5F5}{text} & \verb+#5FA+ & \color{#5FA}{text} & \verb+#5FF+ & \color{#5FF}{text}  \\\\
+\verb+#AF0+ & \color{#AF0}{text} & \verb+#AF5+ & \color{#AF5}{text} & \verb+#AFA+ & \color{#AFA}{text} & \verb+#AFF+ & \color{#AFF}{text}  \\\\
+\verb+#FF0+ & \color{#FF0}{text} & \verb+#FF5+ & \color{#FF5}{text} & \verb+#FFA+ & \color{#FFA}{text} & \verb+#FFF+ & \color{#FFF}{text}  \\\\
 \hline
 \end{array}
 $$

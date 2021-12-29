@@ -13,7 +13,32 @@
       <pubDate>Thu, 23 Dec 2021 11:20:24 +0800</pubDate>
       
       <guid>/math/formulatable/</guid>
-      <description></description>
+      <description>&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;原表示&lt;/th&gt;
+&lt;th&gt;本文章表示&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;\\&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\\\\&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;|&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\|&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;\{&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\\{&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;\%&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;\\%&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</description>
     </item>
     
     <item>
