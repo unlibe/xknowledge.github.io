@@ -14,6 +14,11 @@ math: true
 
 <!--more-->
 
+# 化学
+$$\ce{2H_2 + O_2 ->[燃烧] 2H_2O}$$
+
+# 物理
+
 $$
 \boxed{E=vc^2}
 $$
@@ -1487,7 +1492,7 @@ ${\displaystyle \left[{\frac {a}{b}}\right]}$
 花括号，大括号
 
 `\left{ \frac{a}{b} \right}`
-
+<!-- 下面这一句可以在hugomathjax下渲染，但是无法在vscode中正常展示 -->
 ${\displaystyle \left\\{\frac {a}{b}\right\\}}$
 
 角括号
