@@ -1,7 +1,7 @@
 ---
 title: "func/limit/continuity"
 date: 2021-12-30T09:10:21+08:00
-draft: true
+draft: false
 math: true
 ---
 
@@ -16,5 +16,7 @@ $\arcsin(x), \arccos(x), \arctan(x), \text{arccot}(x),$
 
 
 # limit
+
+${ \lim\limits_{x \to \infty} \frac{1}{x} = 0 }$
 
 # continuity
