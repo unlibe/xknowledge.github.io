@@ -1,9 +1,11 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'MathBlog'
-theme = "hyde"
+# theme = "hyde"
+theme = "hyde-dev"
 # theme = "hugo-theme-pure"
 publishdir = "docs"
+paginate = 2
 [Menus]
   main = [
     #   {Name = "Github", URL = "https://github.com/username/"},
@@ -12,6 +14,7 @@ publishdir = "docs"
     {Name="math",URL="/math"},
   ]
 [params]
+  thh = "thh-value"
 #   themeColor = "theme-base-08"
 #   themeColor = "theme-base-09"
 #   themeColor = "theme-base-0a"
