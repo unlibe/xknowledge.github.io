@@ -6,7 +6,22 @@
     <description>Recent content in Maths on MathBlog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Dec 2021 11:20:24 +0800</lastBuildDate><atom:link href="/math/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Dec 2021 09:10:21 +0800</lastBuildDate><atom:link href="/math/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>func/limit/continuity</title>
+      <link>/math/advancedmathematics1/</link>
+      <pubDate>Thu, 30 Dec 2021 09:10:21 +0800</pubDate>
+      
+      <guid>/math/advancedmathematics1/</guid>
+      <description>function $x^a$
+$a^x(a&amp;gt;0且a\neq1)$
+$\log_a{x}(a&amp;gt;0且a\neq1)$
+$\sin(x), \cos(x), \tan(x), \cot(x), \sec(x), \csc(x),$
+$\arcsin(x), \arccos(x), \arctan(x), \text{arccot}(x),$
+limit ${ \lim\limits_{x \to \infty} \frac{1}{x} = 0 }$
+continuity </description>
+    </item>
+    
     <item>
       <title>公式表</title>
       <link>/math/formulatable/</link>

@@ -1,8 +1,8 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'MathBlog'
-# theme = "hyde"
-theme = "hyde-dev"
+theme = "hyde"
+# theme = "hyde-dev"
 # theme = "hugo-theme-pure"
 publishdir = "docs"
 paginate = 2

@@ -2,17 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tmp/math/</loc>
-    <lastmod>2021-12-28T16:27:37+08:00</lastmod>
+    <loc>/math/advancedmathematics1/</loc>
+    <lastmod>2021-12-30T09:10:21+08:00</lastmod>
   </url><url>
     <loc>/</loc>
+    <lastmod>2021-12-30T09:10:21+08:00</lastmod>
+  </url><url>
+    <loc>/math/</loc>
+    <lastmod>2021-12-30T09:10:21+08:00</lastmod>
+  </url><url>
+    <loc>/tmp/math/</loc>
     <lastmod>2021-12-28T16:27:37+08:00</lastmod>
   </url><url>
     <loc>/tmp/</loc>
     <lastmod>2021-12-28T16:27:37+08:00</lastmod>
-  </url><url>
-    <loc>/math/</loc>
-    <lastmod>2021-12-23T11:20:24+08:00</lastmod>
   </url><url>
     <loc>/math/formulatable/</loc>
     <lastmod>2021-12-23T11:20:24+08:00</lastmod>
