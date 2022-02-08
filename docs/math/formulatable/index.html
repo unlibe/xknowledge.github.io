@@ -3,7 +3,7 @@
 <head>
   <link href="https://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.91.2" />
+  <meta name="generator" content="Hugo 0.83.1" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -491,7 +491,7 @@ $$</p>
 <ul>
 <li>例子：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{cc}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{cc}
 <span style="color:#66d9ef">\mathrm</span>{Bad} &amp; <span style="color:#66d9ef">\mathrm</span>{Better} <span style="color:#66d9ef">\\\\</span>
 <span style="color:#66d9ef">\hline</span> <span style="color:#66d9ef">\\\\</span>
 e^{i<span style="color:#66d9ef">\frac</span>{<span style="color:#66d9ef">\pi</span>}2} <span style="color:#66d9ef">\quad</span> e^{<span style="color:#66d9ef">\frac</span>{i<span style="color:#66d9ef">\pi</span>}2}&amp; e^{i<span style="color:#66d9ef">\pi</span>/2} <span style="color:#66d9ef">\\\\</span>
@@ -501,58 +501,58 @@ e^{i<span style="color:#66d9ef">\frac</span>{<span style="color:#66d9ef">\pi</sp
 <li>显示：
 $$
 \begin{array}{cc}
-\mathrm{Bad} &amp; \mathrm{Better} \\
-\hline \\
-e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}&amp; e^{i\pi/2} \\
-\int_{-\frac\pi2}^\frac\pi2 \sin x,dx &amp; \int_{-\pi/2}^{\pi/2}\sin x,dx \\
+\mathrm{Bad} &amp; \mathrm{Better} \\<br>
+\hline \\<br>
+e^{i\frac{\pi}2} \quad e^{\frac{i\pi}2}&amp; e^{i\pi/2} \\<br>
+\int_{-\frac\pi2}^\frac\pi2 \sin x,dx &amp; \int_{-\pi/2}^{\pi/2}\sin x,dx \\<br>
 \end{array}
 $$</li>
 </ul>
 <h2 id="矩阵条件表达式方程组">矩阵、条件表达式、方程组</h2>
 <p>语法：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{类型}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{类型}
 公式内容
 <span style="color:#66d9ef">\end</span>{类型}
 </code></pre></div><p>类型可以是：矩阵 <code>matrix</code> <code>pmatrix</code> <code>bmatrix</code> <code>Bmatrix</code> <code>vmatrix</code> <code>Vmatrix</code>、条件表达式 <code>cases</code>、多行对齐方程式 <code>aligned</code>、数组 <code>array</code>。</p>
 <p>在公式内容中：在每一行中插入 <code>&amp;</code> 来指定需要<strong>对齐</strong>的内容，在每行结尾处使用 <code>\\\\</code> <strong>换行</strong>。</p>
 <h3 id="无框矩阵">无框矩阵</h3>
 <p>在开头使用 <code>begin{matrix}</code>，在结尾使用 <code>end{matrix}</code>，在中间插入矩阵元素，每个元素之间插入 <code>&amp;</code> ，并在每行结尾处使用 <code>\\\\</code> 。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{matrix}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{matrix}
 x &amp; y <span style="color:#66d9ef">\\\\</span>
 z &amp; v
 <span style="color:#66d9ef">\end</span>{matrix}
 </code></pre></div><p>${\displaystyle {\begin{matrix}x&amp;y\\z&amp;v\end{matrix}}}$</p>
 <h3 id="有框矩阵">有框矩阵</h3>
 <p>在开头将 <code>matrix</code> 替换为 <code>pmatrix</code> <code>bmatrix</code> <code>Bmatrix</code> <code>vmatrix</code> <code>Vmatrix</code> 。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{vmatrix}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{vmatrix}
 x &amp; y <span style="color:#66d9ef">\\\\</span>
 z &amp; v
 <span style="color:#66d9ef">\end</span>{vmatrix}
 </code></pre></div><p>${\displaystyle {\begin{vmatrix}x&amp;y\\z&amp;v\end{vmatrix}}}$</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{Vmatrix}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{Vmatrix}
 x &amp; y <span style="color:#66d9ef">\\\\</span>
 z &amp; v
 <span style="color:#66d9ef">\end</span>{Vmatrix}
 </code></pre></div><p>${\displaystyle {\begin{Vmatrix}x&amp;y\\z&amp;v\end{Vmatrix}}}$</p>
 <p>使用 <code>\cdots</code> $\cdots$ , <code>\ddots</code> $\ddots$ , <code>\vdots</code> $\vdots$ 来输入<strong>省略符号</strong>。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{bmatrix}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{bmatrix}
 0      &amp; <span style="color:#66d9ef">\cdots</span> &amp; 0      <span style="color:#66d9ef">\\\\</span>
 <span style="color:#66d9ef">\vdots</span> &amp; <span style="color:#66d9ef">\ddots</span> &amp; <span style="color:#66d9ef">\vdots</span> <span style="color:#66d9ef">\\\\</span>
 0      &amp; <span style="color:#66d9ef">\cdots</span> &amp; 0
 <span style="color:#66d9ef">\end</span>{bmatrix}
 </code></pre></div><p>${\displaystyle {\begin{bmatrix}0&amp;\cdots &amp;0\\\vdots &amp;\ddots &amp;\vdots \\0&amp;\cdots &amp;0\end{bmatrix}}}$</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{Bmatrix}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{Bmatrix}
 x &amp; y <span style="color:#66d9ef">\\\\</span>
 z &amp; v
 <span style="color:#66d9ef">\end</span>{Bmatrix}
 </code></pre></div><p>${\displaystyle {\begin{Bmatrix}x&amp;y\\z&amp;v\end{Bmatrix}}}$</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{pmatrix}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{pmatrix}
 x &amp; y <span style="color:#66d9ef">\\\\</span>
 z &amp; v
 <span style="color:#66d9ef">\end</span>{pmatrix}
 </code></pre></div><p>${\displaystyle {\begin{pmatrix}x&amp;y\\z&amp;v\end{pmatrix}}}$</p>
 <h3 id="条件表达式">条件表达式</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">f(n) =
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">f(n) =
 <span style="color:#66d9ef">\begin</span>{cases} 
 n/2,  &amp; <span style="color:#66d9ef">\text</span>{if }n<span style="color:#66d9ef">\text</span>{ is even} <span style="color:#66d9ef">\\\\</span>
 3n+1, &amp; <span style="color:#66d9ef">\text</span>{if }n<span style="color:#66d9ef">\text</span>{ is odd}
@@ -560,12 +560,12 @@ n/2,  &amp; <span style="color:#66d9ef">\text</span>{if }n<span style="color:#66
 </code></pre></div><p>${\displaystyle f(n)={\begin{cases}n/2,&amp;{\text{if }}n{\text{ is even}}\\3n+1,&amp;{\text{if }}n{\text{ is odd}}\end{cases}}}$</p>
 <h3 id="多行等式同余式">多行等式、同余式</h3>
 <p>人们经常想要一列整齐且居中的方程式序列。使用 <code>\begin{aligned}…\end{aligned}</code>。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{aligned}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{aligned}
 f(x) &amp; = (m+n)^2 <span style="color:#66d9ef">\\\\</span>
      &amp; = m^2+2mn+n^2 <span style="color:#66d9ef">\\\\</span>
 <span style="color:#66d9ef">\end</span>{aligned}
 </code></pre></div><p>${\displaystyle {\begin{aligned}f(x)&amp;=(m+n)^{2}\\&amp;=m^{2}+2mn+n^{2}\\\end{aligned}}}$</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">begin{aligned}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">begin{aligned}
 3^{6n+3}+4^{6n+3} 
 &amp; <span style="color:#66d9ef">\equiv</span> (3^3)^{2n+1}+(4^3)^{2n+1}<span style="color:#66d9ef">\\\\</span>  
 &amp; <span style="color:#66d9ef">\equiv</span> 27^{2n+1}+64^{2n+1}<span style="color:#66d9ef">\\\\</span>  
@@ -574,14 +574,14 @@ f(x) &amp; = (m+n)^2 <span style="color:#66d9ef">\\\\</span>
 &amp; <span style="color:#66d9ef">\equiv</span> 0 <span style="color:#66d9ef">\pmod</span>{91}<span style="color:#66d9ef">\\\\</span>
 <span style="color:#66d9ef">\end</span>{aligned}
 </code></pre></div><p>${\displaystyle {\begin{aligned}3^{6n+3}+4^{6n+3}&amp;\equiv (3^{3})^{2n+1}+(4^{3})^{2n+1}\\&amp;\equiv 27^{2n+1}+64^{2n+1}\\&amp;\equiv 27^{2n+1}+(-27)^{2n+1}\\&amp;\equiv 27^{2n+1}-27^{2n+1}\\&amp;\equiv 0{\pmod {91}}\\\end{aligned}}}$</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{alignedat}{3}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{alignedat}{3}
 f(x) &amp; = (m-n)^2 <span style="color:#66d9ef">\\\\</span>
 f(x) &amp; = (-m+n)^2 <span style="color:#66d9ef">\\\\</span>
      &amp; = m^2-2mn+n^2 <span style="color:#66d9ef">\\\\</span>
 <span style="color:#66d9ef">\end</span>{alignedat}
 </code></pre></div><p>${\displaystyle {\begin{alignedat}{3}f(x)&amp;=(m-n)^{2}\\f(x)&amp;=(-m+n)^{2}\\&amp;=m^{2}-2mn+n^{2}\\\end{alignedat}}}$</p>
 <h3 id="方程组">方程组</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{cases}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{cases}
 3x + 5y +  z <span style="color:#66d9ef">\\\\</span>
 7x - 2y + 4z <span style="color:#66d9ef">\\\\</span>
 -6x + 3y + 2z
@@ -590,15 +590,15 @@ f(x) &amp; = (-m+n)^2 <span style="color:#66d9ef">\\\\</span>
 {\displaystyle {\begin{cases}3x+5y+z\\7x-2y+4z\\-6x+3y+2z\end{cases}}}
 $$</p>
 <p>或</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\left\{\begin</span>{aligned}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\left\{\begin</span>{aligned}
 3x + 5y +  z <span style="color:#66d9ef">\\\\</span>
 7x - 2y + 4z <span style="color:#66d9ef">\\\\</span>
 -6x + 3y + 2z
 <span style="color:#66d9ef">\end</span>{aligned}<span style="color:#66d9ef">\right</span>.
 </code></pre></div><p>$$
 \left{\begin{aligned}
-3x + 5y +  z \\
-7x - 2y + 4z \\
+3x + 5y +  z \\<br>
+7x - 2y + 4z \\<br>
 -6x + 3y + 2z
 \end{aligned}\right.
 $$</p>
@@ -607,7 +607,7 @@ $$</p>
 <ul>
 <li>例子：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{c|lcr}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{c|lcr}
 n &amp; <span style="color:#66d9ef">\text</span>{左对齐} &amp; <span style="color:#66d9ef">\text</span>{居中对齐} &amp; <span style="color:#66d9ef">\text</span>{右对齐} <span style="color:#66d9ef">\\\\</span>
 <span style="color:#66d9ef">\hline</span>
 1 &amp; 0.24 &amp; 1 &amp; 125 <span style="color:#66d9ef">\\\\</span>
@@ -619,10 +619,10 @@ n &amp; <span style="color:#66d9ef">\text</span>{左对齐} &amp; <span style="c
 <p>显示：
 $$
 \begin{array}{c|lcr}
-n &amp; \text{左对齐} &amp; \text{居中对齐} &amp; \text{右对齐} \\
+n &amp; \text{左对齐} &amp; \text{居中对齐} &amp; \text{右对齐} \\<br>
 \hline
-1 &amp; 0.24 &amp; 1 &amp; 125 \\
-2 &amp; -1 &amp; 189 &amp; -8 \\
+1 &amp; 0.24 &amp; 1 &amp; 125 \\<br>
+2 &amp; -1 &amp; 189 &amp; -8 \\<br>
 3 &amp; -20 &amp; 2000 &amp; 1+10i
 \end{array}
 $$</p>
@@ -631,7 +631,7 @@ $$</p>
 <p>例子:</p>
 </li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{lcl}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{lcl}
 z        &amp; = &amp; a <span style="color:#66d9ef">\\\\</span>
 f(x,y,z) &amp; = &amp; x + y + z 
 <span style="color:#66d9ef">\end</span>{array}
@@ -642,7 +642,7 @@ f(x,y,z) &amp; = &amp; x + y + z
 <ul>
 <li>例子:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{lcr}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{lcr}
 z        &amp; = &amp; a <span style="color:#66d9ef">\\\\</span>
 f(x,y,z) &amp; = &amp; x + y + z    
 <span style="color:#66d9ef">\end</span>{array}
@@ -653,7 +653,7 @@ f(x,y,z) &amp; = &amp; x + y + z
 <ul>
 <li>例子:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{ccc}
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#66d9ef">\begin</span>{array}{ccc}
 a &amp; b &amp; S <span style="color:#66d9ef">\\\\</span>
 <span style="color:#66d9ef">\hline</span>
 0&amp;0&amp;1<span style="color:#66d9ef">\\\\</span>
@@ -673,7 +673,7 @@ $$</p>
 <ul>
 <li>例子：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#75715e">% outer vertical array of arrays 外层垂直表格
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#75715e">% outer vertical array of arrays 外层垂直表格
 </span><span style="color:#75715e"></span><span style="color:#66d9ef">\begin</span>{array}{c}
     <span style="color:#75715e">% inner horizontal array of arrays 内层水平表格
 </span><span style="color:#75715e"></span>    <span style="color:#66d9ef">\begin</span>{array}{cc}
@@ -719,33 +719,33 @@ $$
 \begin{array}{cc}
 % inner array of minimum values 内层&quot;最小值&quot;数组
 \begin{array}{c|cccc}
-\text{min} &amp; 0 &amp; 1 &amp; 2 &amp; 3\\
+\text{min} &amp; 0 &amp; 1 &amp; 2 &amp; 3\\<br>
 \hline
-0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
-1 &amp; 0 &amp; 1 &amp; 1 &amp; 1\\
-2 &amp; 0 &amp; 1 &amp; 2 &amp; 2\\
+0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\<br>
+1 &amp; 0 &amp; 1 &amp; 1 &amp; 1\\<br>
+2 &amp; 0 &amp; 1 &amp; 2 &amp; 2\\<br>
 3 &amp; 0 &amp; 1 &amp; 2 &amp; 3
 \end{array}
 &amp;
 % inner array of maximum values 内层&quot;最大值&quot;数组
 \begin{array}{c|cccc}
-\text{max}&amp;0&amp;1&amp;2&amp;3\\
+\text{max}&amp;0&amp;1&amp;2&amp;3\\<br>
 \hline
-0 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\
-1 &amp; 1 &amp; 1 &amp; 2 &amp; 3\\
-2 &amp; 2 &amp; 2 &amp; 2 &amp; 3\\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\<br>
+1 &amp; 1 &amp; 1 &amp; 2 &amp; 3\\<br>
+2 &amp; 2 &amp; 2 &amp; 2 &amp; 3\\<br>
 3 &amp; 3 &amp; 3 &amp; 3 &amp; 3
 \end{array}
 \end{array}
 % 内层第一行表格组结束
-\\
+\\<br>
 % inner array of delta values 内层第二行Delta值数组
 \begin{array}{c|cccc}
-\Delta&amp;0&amp;1&amp;2&amp;3\\
+\Delta&amp;0&amp;1&amp;2&amp;3\\<br>
 \hline
-0 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\
-1 &amp; 1 &amp; 0 &amp; 1 &amp; 2\\
-2 &amp; 2 &amp; 1 &amp; 0 &amp; 1\\
+0 &amp; 0 &amp; 1 &amp; 2 &amp; 3\\<br>
+1 &amp; 1 &amp; 0 &amp; 1 &amp; 2\\<br>
+2 &amp; 2 &amp; 1 &amp; 0 &amp; 1\\<br>
 3 &amp; 3 &amp; 2 &amp; 1 &amp; 0
 \end{array}
 % 内层第二行表格组结束
@@ -756,7 +756,7 @@ $$</li>
 <ul>
 <li>例子：</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$$</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex"><span style="color:#e6db74">$$</span>
 \left<span style="color:#f92672">[</span>
     \begin{array}{cc|c}
       <span style="color:#ae81ff">1</span>&amp;<span style="color:#ae81ff">2</span>&amp;<span style="color:#ae81ff">3</span>\\\\
@@ -769,7 +769,7 @@ $$</li>
 $$
 \left[
 \begin{array}{cc|c}
-1&amp;2&amp;3\\
+1&amp;2&amp;3\\<br>
 4&amp;5&amp;6
 \end{array}
 \right]
@@ -934,7 +934,7 @@ $$</li>
 <ul>
 <li>例子：</li>
 </ul>
-<pre tabindex="0"><code>f(n)= \begin{cases}
+<pre><code>f(n)= \begin{cases}
 n/2, &amp; \text {if $n$ is even} \\\\
 3n+1, &amp;\text{if $n$ is odd}
 \end{cases} 
@@ -1115,7 +1115,7 @@ $$</p>
 <ul>
 <li>例子：</li>
 </ul>
-<pre tabindex="0"><code>\begin{array}{|rrrrrrrr|}\hline
+<pre><code>\begin{array}{|rrrrrrrr|}\hline
 \verb+#000+ &amp; \color{#000}{text} &amp; &amp; &amp;
 \verb+#00F+ &amp; \color{#00F}{text} &amp; &amp; \\\\
 &amp; &amp; \verb+#0F0+ &amp; \color{#0F0}{text} &amp;
@@ -1132,13 +1132,13 @@ $$</p>
 $$
 \begin{array}{|rrrrrrrr|}\hline
 \verb+#000+ &amp; \color{#000}{text} &amp; &amp; &amp;
-\verb+#00F+ &amp; \color{#00F}{text} &amp; &amp; \\
+\verb+#00F+ &amp; \color{#00F}{text} &amp; &amp; \\<br>
 &amp; &amp; \verb+#0F0+ &amp; \color{#0F0}{text} &amp;
-&amp; &amp; \verb+#0FF+ &amp; \color{#0FF}{text}\\
+&amp; &amp; \verb+#0FF+ &amp; \color{#0FF}{text}\\<br>
 \verb+#F00+ &amp; \color{#F00}{text} &amp; &amp; &amp;
-\verb+#F0F+ &amp; \color{#F0F}{text} &amp; &amp; \\
+\verb+#F0F+ &amp; \color{#F0F}{text} &amp; &amp; \\<br>
 &amp; &amp; \verb+#FF0+ &amp; \color{#FF0}{text} &amp;
-&amp; &amp; \verb+#FFF+ &amp; \color{#FFF}{text}\\
+&amp; &amp; \verb+#FFF+ &amp; \color{#FFF}{text}\\<br>
 \hline
 \end{array}
 $$</p>
@@ -1147,7 +1147,7 @@ $$</p>
 <p>例子：</p>
 </li>
 </ul>
-<pre tabindex="0"><code>\begin{array}{|rrrrrrrr|}
+<pre><code>\begin{array}{|rrrrrrrr|}
 \hline
 \verb+#000+ &amp; \color{#000}{text} &amp; \verb+#005+ &amp; \color{#005}{text} &amp; \verb+#00A+ &amp; \color{#00A}{text} &amp; \verb+#00F+ &amp; \color{#00F}{text}  \\\\
 \verb+#500+ &amp; \color{#500}{text} &amp; \verb+#505+ &amp; \color{#505}{text} &amp; \verb+#50A+ &amp; \color{#50A}{text} &amp; \verb+#50F+ &amp; \color{#50F}{text}  \\\\
@@ -1170,20 +1170,20 @@ $$</p>
 $$
 \begin{array}{|rrrrrrrr|}
 \hline
-\verb+#000+ &amp; \color{#000}{text} &amp; \verb+#005+ &amp; \color{#005}{text} &amp; \verb+#00A+ &amp; \color{#00A}{text} &amp; \verb+#00F+ &amp; \color{#00F}{text}  \\
-\verb+#500+ &amp; \color{#500}{text} &amp; \verb+#505+ &amp; \color{#505}{text} &amp; \verb+#50A+ &amp; \color{#50A}{text} &amp; \verb+#50F+ &amp; \color{#50F}{text}  \\
-\verb+#A00+ &amp; \color{#A00}{text} &amp; \verb+#A05+ &amp; \color{#A05}{text} &amp; \verb+#A0A+ &amp; \color{#A0A}{text} &amp; \verb+#A0F+ &amp; \color{#A0F}{text}  \\
-\verb+#F00+ &amp; \color{#F00}{text} &amp; \verb+#F05+ &amp; \color{#F05}{text} &amp; \verb+#F0A+ &amp; \color{#F0A}{text} &amp; \verb+#F0F+ &amp; \color{#F0F}{text}  \\
+\verb+#000+ &amp; \color{#000}{text} &amp; \verb+#005+ &amp; \color{#005}{text} &amp; \verb+#00A+ &amp; \color{#00A}{text} &amp; \verb+#00F+ &amp; \color{#00F}{text}  \\<br>
+\verb+#500+ &amp; \color{#500}{text} &amp; \verb+#505+ &amp; \color{#505}{text} &amp; \verb+#50A+ &amp; \color{#50A}{text} &amp; \verb+#50F+ &amp; \color{#50F}{text}  \\<br>
+\verb+#A00+ &amp; \color{#A00}{text} &amp; \verb+#A05+ &amp; \color{#A05}{text} &amp; \verb+#A0A+ &amp; \color{#A0A}{text} &amp; \verb+#A0F+ &amp; \color{#A0F}{text}  \\<br>
+\verb+#F00+ &amp; \color{#F00}{text} &amp; \verb+#F05+ &amp; \color{#F05}{text} &amp; \verb+#F0A+ &amp; \color{#F0A}{text} &amp; \verb+#F0F+ &amp; \color{#F0F}{text}  \\<br>
 \hline
-\verb+#080+ &amp; \color{#080}{text} &amp; \verb+#085+ &amp; \color{#085}{text} &amp; \verb+#08A+ &amp; \color{#08A}{text} &amp; \verb+#08F+ &amp; \color{#08F}{text}  \\
-\verb+#580+ &amp; \color{#580}{text} &amp; \verb+#585+ &amp; \color{#585}{text} &amp; \verb+#58A+ &amp; \color{#58A}{text} &amp; \verb+#58F+ &amp; \color{#58F}{text}  \\
-\verb+#A80+ &amp; \color{#A80}{text} &amp; \verb+#A85+ &amp; \color{#A85}{text} &amp; \verb+#A8A+ &amp; \color{#A8A}{text} &amp; \verb+#A8F+ &amp; \color{#A8F}{text}  \\
-\verb+#F80+ &amp; \color{#F80}{text} &amp; \verb+#F85+ &amp; \color{#F85}{text} &amp; \verb+#F8A+ &amp; \color{#F8A}{text} &amp; \verb+#F8F+ &amp; \color{#F8F}{text}  \\
+\verb+#080+ &amp; \color{#080}{text} &amp; \verb+#085+ &amp; \color{#085}{text} &amp; \verb+#08A+ &amp; \color{#08A}{text} &amp; \verb+#08F+ &amp; \color{#08F}{text}  \\<br>
+\verb+#580+ &amp; \color{#580}{text} &amp; \verb+#585+ &amp; \color{#585}{text} &amp; \verb+#58A+ &amp; \color{#58A}{text} &amp; \verb+#58F+ &amp; \color{#58F}{text}  \\<br>
+\verb+#A80+ &amp; \color{#A80}{text} &amp; \verb+#A85+ &amp; \color{#A85}{text} &amp; \verb+#A8A+ &amp; \color{#A8A}{text} &amp; \verb+#A8F+ &amp; \color{#A8F}{text}  \\<br>
+\verb+#F80+ &amp; \color{#F80}{text} &amp; \verb+#F85+ &amp; \color{#F85}{text} &amp; \verb+#F8A+ &amp; \color{#F8A}{text} &amp; \verb+#F8F+ &amp; \color{#F8F}{text}  \\<br>
 \hline
-\verb+#0F0+ &amp; \color{#0F0}{text} &amp; \verb+#0F5+ &amp; \color{#0F5}{text} &amp; \verb+#0FA+ &amp; \color{#0FA}{text} &amp; \verb+#0FF+ &amp; \color{#0FF}{text}  \\
-\verb+#5F0+ &amp; \color{#5F0}{text} &amp; \verb+#5F5+ &amp; \color{#5F5}{text} &amp; \verb+#5FA+ &amp; \color{#5FA}{text} &amp; \verb+#5FF+ &amp; \color{#5FF}{text}  \\
-\verb+#AF0+ &amp; \color{#AF0}{text} &amp; \verb+#AF5+ &amp; \color{#AF5}{text} &amp; \verb+#AFA+ &amp; \color{#AFA}{text} &amp; \verb+#AFF+ &amp; \color{#AFF}{text}  \\
-\verb+#FF0+ &amp; \color{#FF0}{text} &amp; \verb+#FF5+ &amp; \color{#FF5}{text} &amp; \verb+#FFA+ &amp; \color{#FFA}{text} &amp; \verb+#FFF+ &amp; \color{#FFF}{text}  \\
+\verb+#0F0+ &amp; \color{#0F0}{text} &amp; \verb+#0F5+ &amp; \color{#0F5}{text} &amp; \verb+#0FA+ &amp; \color{#0FA}{text} &amp; \verb+#0FF+ &amp; \color{#0FF}{text}  \\<br>
+\verb+#5F0+ &amp; \color{#5F0}{text} &amp; \verb+#5F5+ &amp; \color{#5F5}{text} &amp; \verb+#5FA+ &amp; \color{#5FA}{text} &amp; \verb+#5FF+ &amp; \color{#5FF}{text}  \\<br>
+\verb+#AF0+ &amp; \color{#AF0}{text} &amp; \verb+#AF5+ &amp; \color{#AF5}{text} &amp; \verb+#AFA+ &amp; \color{#AFA}{text} &amp; \verb+#AFF+ &amp; \color{#AFF}{text}  \\<br>
+\verb+#FF0+ &amp; \color{#FF0}{text} &amp; \verb+#FF5+ &amp; \color{#FF5}{text} &amp; \verb+#FFA+ &amp; \color{#FFA}{text} &amp; \verb+#FFF+ &amp; \color{#FFF}{text}  \\<br>
 \hline
 \end{array}
 $$</li>
